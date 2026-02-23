@@ -61,7 +61,7 @@ async function handleButtonClick() {
                       `&redirect_uri=${encodeURIComponent(redirect_uri)}` +
                       `&code_challenge=${codeChallenge}` +
                       `&code_challenge_method=S256`; +
-                      `&immediate=false`; // <--- ADD THIS PARAMETER
+                      `&immediate=true`; // <--- ADD THIS PARAMETER
 
         // NOTE: If you experience 'immediate_unsuccessful' errors while logged in,
         // you may need to remove any '&scope=...' parameters from your URL 
